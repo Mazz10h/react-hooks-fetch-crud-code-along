@@ -1,11 +1,10 @@
 import React from "react";
 
-function Filter({ category, onCategoryChange }) {
+function Filter({ onCategoryChange }) {
   return (
     <div className="Filter">
       <select
         name="filter"
-        value={category}
         onChange={(e) => onCategoryChange(e.target.value)}
       >
         <option value="All">Filter by category</option>
@@ -18,3 +17,4 @@ function Filter({ category, onCategoryChange }) {
 }
 
 export default Filter;
+
